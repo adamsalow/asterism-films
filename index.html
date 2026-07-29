@@ -1,107 +1,142 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Asterism Films is an independent film studio in Middle Tennessee telling stories of people, places, and ideas that change us.">
-  <meta name="theme-color" content="#f3ead7">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Asterism Films — stories of people, places, and ideas that change us." />
   <title>Asterism Films</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="paper-noise" aria-hidden="true"></div>
 
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Asterism Films home">
-      <span class="brand-star" aria-hidden="true">✦</span>
+      <img src="assets/asterism-logo.png" alt="" />
       <span>ASTERISM FILMS</span>
     </a>
-    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav id="site-nav" aria-label="Primary navigation">
+
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
       <a href="#work">Work</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main id="main">
-    <section class="hero" id="top">
-      <div class="stars" aria-hidden="true"></div>
+  <main id="top">
+    <section class="hero">
       <div class="hero-copy reveal">
-        <p class="eyebrow">Independent film studio · Middle Tennessee</p>
-        <h1>Stories of people,<br>places, and ideas<br>that change us.</h1>
-        <p class="manifesto-line">We don’t create the stars.<br>We discover the pattern.</p>
+        <p class="eyebrow">Independent film studio · Tennessee</p>
+        <h1>Stories of people,<br>places, and ideas<br><em>that change us.</em></h1>
+        <p class="hero-note">We don’t create the stars.<br>We discover the pattern.</p>
+        <a class="text-link" href="#philosophy">Begin the journey <span aria-hidden="true">↓</span></a>
       </div>
-      <img class="hero-logo reveal delay" src="assets/asterism-logo.png" alt="Asterism Films celestial badge">
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="constellation-line line-one"></div>
+        <div class="constellation-line line-two"></div>
+        <div class="constellation-line line-three"></div>
+        <span class="star s1"></span>
+        <span class="star s2"></span>
+        <span class="star s3"></span>
+        <span class="star s4"></span>
+        <span class="star s5"></span>
+        <span class="star s6"></span>
+        <img src="assets/asterism-logo.png" alt="" class="hero-mark" />
+        <p class="plate-label">FIELD PLATE 01<br><span>ASTERISM / DISCOVERY</span></p>
+      </div>
     </section>
 
-    <section class="philosophy section" aria-labelledby="philosophy-title">
-      <div class="section-label">Philosophy</div>
-      <div class="editorial-copy reveal">
-        <h2 id="philosophy-title">Every community has its own constellation.</h2>
-        <p>Every family. Every school. Every business. Every town. Every life.</p>
-        <p>The stories are already there. Most people simply never stop long enough to notice them.</p>
-        <p class="closing">We pay attention. We find the connections. We discover the pattern.</p>
+    <section id="philosophy" class="chapter philosophy">
+      <div class="chapter-number">01</div>
+      <div class="chapter-copy reveal">
+        <p class="eyebrow">Our point of view</p>
+        <h2>Every community has its own constellation.</h2>
+        <div class="manifesto">
+          <p>Every family. Every school. Every business. Every town. Every life.</p>
+          <p>The stories already exist. Most people simply never stop long enough to notice them.</p>
+          <p>We pay attention. We follow the connections. We discover the pattern.</p>
+        </div>
       </div>
+      <aside class="margin-note reveal">
+        <span>ASTERISM</span>
+        <p>An unofficial pattern of stars — visible because someone chose to connect them.</p>
+      </aside>
     </section>
 
-    <section class="work section paper" id="work" aria-labelledby="work-title">
+    <section id="work" class="chapter work">
+      <div class="chapter-number">02</div>
       <div class="section-heading reveal">
-        <div class="section-label">Work</div>
-        <h2 id="work-title">Films with a point of view.</h2>
+        <p class="eyebrow">Selected work</p>
+        <h2>Films in motion.</h2>
       </div>
+
       <div class="work-grid">
-        <article class="work-card reveal">
-          <div class="work-number">01</div>
-          <div>
-            <p class="work-type">Feature Documentary · In Development</p>
+        <article class="project-card project-dark reveal">
+          <div class="project-index">A–01</div>
+          <div class="project-content">
+            <p class="project-type">Feature documentary · In development</p>
             <h3>Improv</h3>
-            <p>A character-driven documentary about what happens when adults step into a room, surrender control, and learn to play again.</p>
+            <p>A class of strangers learns to listen, risk failure, and become something together.</p>
           </div>
+          <div class="project-symbol" aria-hidden="true">✦</div>
         </article>
-        <article class="work-card reveal">
-          <div class="work-number">02</div>
-          <div>
-            <p class="work-type">Narrative Film · In Development</p>
+
+        <article class="project-card project-light reveal">
+          <div class="project-index">A–02</div>
+          <div class="project-content">
+            <p class="project-type">Narrative film · In development</p>
             <h3>The Garage</h3>
-            <p>A family story about screens, imagination, and what children rediscover when the noise finally goes quiet.</p>
+            <p>A family steps away from screens and rediscovers what has been waiting just outside the frame.</p>
           </div>
+          <div class="project-symbol trail" aria-hidden="true"></div>
         </article>
-        <article class="work-card reveal">
-          <div class="work-number">03</div>
-          <div>
-            <p class="work-type">Short Documentary & Brand Films</p>
-            <h3>Community Stories</h3>
-            <p>Films about the people, places, and ideas that give a community its character.</p>
+
+        <article class="project-card project-gold reveal">
+          <div class="project-index">A–03</div>
+          <div class="project-content">
+            <p class="project-type">Documentary · Research</p>
+            <h3>Castle Gwynn</h3>
+            <p>One person’s impossible dream, built slowly enough to become a world of its own.</p>
           </div>
+          <div class="project-symbol" aria-hidden="true">✧</div>
         </article>
       </div>
     </section>
 
-    <section class="about section" id="about" aria-labelledby="about-title">
-      <div class="section-label">About</div>
-      <div class="editorial-copy reveal">
-        <h2 id="about-title">An independent studio built around attention.</h2>
-        <p>Asterism Films is an independent film studio based in Middle Tennessee, creating documentaries, narrative films, and thoughtful commercial stories.</p>
-        <p>Founded by Adam Salow, the studio begins with curiosity: looking carefully, listening patiently, and finding the human pattern inside every story.</p>
+    <section id="about" class="chapter about">
+      <div class="chapter-number">03</div>
+      <div class="about-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About the studio</p>
+          <h2>Curiosity first.<br>Craft always.</h2>
+        </div>
+        <div class="about-copy reveal">
+          <p>Asterism Films is an independent film studio based in Tennessee, focused on documentaries, narrative films, and meaningful commercial storytelling.</p>
+          <p>We are drawn to people building something difficult, communities hiding extraordinary stories in plain sight, and ideas that change the way we see the world.</p>
+        </div>
       </div>
     </section>
 
-    <section class="contact section paper" id="contact" aria-labelledby="contact-title">
-      <div class="section-label">Contact</div>
-      <div class="contact-copy reveal">
-        <h2 id="contact-title">Let’s talk about the story.</h2>
-        <a class="email-link" href="mailto:hello@asterismfilms.com">hello@asterismfilms.com</a>
+    <section id="contact" class="contact reveal">
+      <div>
+        <p class="eyebrow">Start a conversation</p>
+        <h2>Somewhere, a story is already beginning.</h2>
       </div>
+      <a class="contact-link" href="mailto:hello@asterismfilms.com">hello@asterismfilms.com <span aria-hidden="true">↗</span></a>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Asterism Films</p>
-    <p>Middle Tennessee</p>
+    <span>ASTERISM FILMS</span>
+    <span>Middle Tennessee</span>
+    <span>© <span id="year"></span></span>
   </footer>
 
   <script src="script.js"></script>
