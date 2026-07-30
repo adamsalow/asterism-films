@@ -41,8 +41,8 @@ img { display: block; max-width: 100%; }
   transition: background .25s ease, height .25s ease;
 }
 .site-header.scrolled { height: 62px; background: rgba(3,31,39,.94); backdrop-filter: blur(10px); }
-.brand { display: flex; align-items: center; gap: .75rem; text-decoration: none; letter-spacing: .24em; font-size: .82rem; font-weight: 700; }
-.brand img { width: 40px; height: 40px; object-fit: contain; }
+.brand { display: flex; align-items: center; gap: .75rem; text-decoration: none; letter-spacing: .24em; font-size: .92rem; font-weight: 700; }
+.brand img { width: 54px; height: 54px; object-fit: contain; }
 .site-nav { display: flex; gap: 2rem; }
 .site-nav a { text-decoration: none; font-size: .95rem; position: relative; }
 .site-nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -.35rem; height: 1px; background: var(--gold); transition: right .2s ease; }
@@ -83,6 +83,8 @@ img { display: block; max-width: 100%; }
 .hero h1 { margin: 0; max-width: 9ch; font: 400 clamp(4.2rem, 9.6vw, 9rem)/.91 var(--serif); letter-spacing: -.055em; text-wrap: balance; }
 .hero-copy { margin: 2rem 0 2.2rem; max-width: 490px; font: italic 400 clamp(1.15rem, 2vw, 1.55rem)/1.55 var(--serif); color: #d9eadc; }
 .hero-link { display: inline-flex; gap: .8rem; align-items: center; text-decoration: none; padding-bottom: .35rem; border-bottom: 1px solid rgba(239,198,108,.65); color: var(--gold); font-weight: 600; }
+.hero-emblem { position: relative; z-index: 3; justify-self: end; width: min(34vw, 430px); filter: drop-shadow(0 28px 44px rgba(0,0,0,.32)); transform: rotate(3deg); }
+.hero-emblem img { animation: float 6s ease-in-out infinite; }
 .horizon { position: absolute; inset: auto 0 0; height: 28%; z-index: 2; }
 .ridge { position: absolute; inset: auto -5% 0; height: 100%; background: #02171d; clip-path: polygon(0 77%, 9% 61%, 17% 72%, 27% 42%, 38% 68%, 50% 50%, 60% 71%, 74% 39%, 84% 67%, 100% 49%, 100% 100%, 0 100%); }
 .ridge-back { opacity: .55; transform: translateY(-25px) scale(1.03); background: #0a5557; }
@@ -90,24 +92,7 @@ img { display: block; max-width: 100%; }
 .road { position: absolute; width: 20vw; min-width: 220px; height: 110%; left: 50%; bottom: -60%; transform: translateX(-50%); background: linear-gradient(to bottom, rgba(239,198,108,.8), rgba(239,198,108,0)); clip-path: polygon(47% 0, 53% 0, 100% 100%, 0 100%); opacity: .38; }
 
 .manifesto { position: relative; padding: clamp(5rem, 11vw, 10rem) clamp(1.4rem, 8vw, 9rem); background: var(--paper); background-image: linear-gradient(rgba(8,47,53,.035) 1px, transparent 1px); background-size: 100% 5px; }
-.chapter-mark {
-  position:absolute;
-  right:clamp(2rem,5vw,5rem);
-  top:3.5rem;
-  display:flex;
-  flex-direction:column;
-  gap:.35rem;
-  font-family:var(--serif);
-  font-size:clamp(2.1rem,4vw,3.4rem);
-  line-height:1;
-  letter-spacing:.08em;
-  color:rgba(8,47,53,.065);
-  writing-mode:vertical-rl;
-  text-orientation:mixed;
-  user-select:none;
-  pointer-events:none;
-}
-
+.chapter-mark { position: absolute; right: 5vw; top: 3rem; font: 400 clamp(7rem, 16vw, 15rem)/1 var(--serif); color: rgba(8,47,53,.055); }
 .manifesto-inner { max-width: 1120px; position: relative; }
 .manifesto h2, .section-heading h2, .about-copy h2, .contact-inner h2 { margin: 0; font: 400 clamp(2.7rem, 6vw, 6rem)/1.05 var(--serif); letter-spacing: -.04em; }
 .manifesto h2 { max-width: 12ch; }
@@ -169,7 +154,7 @@ footer { display:flex;justify-content:space-between;gap:1rem;padding:1.4rem clam
 @media (max-width: 920px) {
   .hero { grid-template-columns:1fr; align-content:center; }
   .hero-content { padding-top:2rem; }
-  
+  .hero-emblem { position:absolute; width:270px; right:-60px; bottom:10%; opacity:.35; }
   .project-grid { grid-template-columns:1fr; }
   .project-card { min-height:520px; display:grid; grid-template-columns:1fr 1fr; }
   .project-art { height:100%; }
@@ -183,9 +168,9 @@ footer { display:flex;justify-content:space-between;gap:1rem;padding:1.4rem clam
   .menu-button { display:block; border:1px solid rgba(255,255,255,.4); background:transparent; color:var(--white); padding:.45rem .7rem; }
   .site-nav { display:none; position:absolute; top:64px; left:0;right:0; padding:1.2rem; flex-direction:column; background:rgba(3,31,39,.98); }
   .site-nav.open { display:flex; }
-  .hero { min-height:94vh; padding-top:9rem; }
+  .hero { min-height:94vh; padding-top:7rem; }
   .hero h1 { font-size:clamp(3.7rem,17vw,5.7rem); }
-  
+  .hero-emblem { width:220px; right:-80px; bottom:12%; }
   .manifesto-grid { grid-template-columns:1fr; gap:.6rem; }
   .project-card { display:flex; min-height:600px; }
   .project-art { height:54%; }
