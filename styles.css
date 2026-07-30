@@ -168,7 +168,7 @@ footer { display:flex;justify-content:space-between;gap:1rem;padding:1.4rem clam
   .menu-button { display:block; border:1px solid rgba(255,255,255,.4); background:transparent; color:var(--white); padding:.45rem .7rem; }
   .site-nav { display:none; position:absolute; top:64px; left:0;right:0; padding:1.2rem; flex-direction:column; background:rgba(3,31,39,.98); }
   .site-nav.open { display:flex; }
-  .hero { min-height:94vh; padding-top:7rem; }
+  .hero { min-height:94vh; padding-top:9rem; }
   .hero h1 { font-size:clamp(3.7rem,17vw,5.7rem); }
   .hero-emblem { width:220px; right:-80px; bottom:12%; }
   .manifesto-grid { grid-template-columns:1fr; gap:.6rem; }
