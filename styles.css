@@ -41,8 +41,8 @@ img { display: block; max-width: 100%; }
   transition: background .25s ease, height .25s ease;
 }
 .site-header.scrolled { height: 62px; background: rgba(3,31,39,.94); backdrop-filter: blur(10px); }
-.brand { display: flex; align-items: center; gap: .75rem; text-decoration: none; letter-spacing: .24em; font-size: .82rem; font-weight: 700; }
-.brand img { width: 40px; height: 40px; object-fit: contain; }
+.brand { display: flex; align-items: center; gap: .75rem; text-decoration: none; letter-spacing: .24em; font-size: .92rem; font-weight: 700; }
+.brand img { width: 54px; height: 54px; object-fit: contain; }
 .site-nav { display: flex; gap: 2rem; }
 .site-nav a { text-decoration: none; font-size: .95rem; position: relative; }
 .site-nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -.35rem; height: 1px; background: var(--gold); transition: right .2s ease; }
