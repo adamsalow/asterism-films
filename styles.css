@@ -50,7 +50,7 @@ img { display: block; max-width: 100%; }
 .menu-button { display: none; }
 
 .hero {
-  min-height: 100vh;
+  min-height: 82vh;
   position: relative;
   overflow: hidden;
   display: grid;
