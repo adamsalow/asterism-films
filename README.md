@@ -1,10 +1,12 @@
-# Asterism Films website — version 2
+# Asterism Films
 
-Upload the contents of this folder to the root of the GitHub repository.
+Static website for Asterism Films.
 
-Required structure:
+## GitHub Pages
+Upload the contents of this folder to the root of the `asterism-films` repository. Existing files with the same names can be replaced.
 
-- index.html
-- styles.css
-- script.js
-- assets/asterism-logo.png
+Files:
+- `index.html`
+- `styles.css`
+- `script.js`
+- `assets/asterism-logo.png`
